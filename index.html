@@ -25,7 +25,7 @@
                      SOUND</h1>
             </div>
             <div class="right-col">
-                <p>Click here to listene</p>
+                <p>Click here to listen</p>
                 <img src="images/play.png" id="icon">
             </div>
         </div>
@@ -34,20 +34,8 @@
         <source src="images/casa.mp3" type="audio/mp3">
     </audio>
 
-    <script>
-        var mySong = document.getElementById("mySong");
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function(){
-            if(mySong.paused){
-                mySong.play();
-                icon.src = "images/pause.png";
-            }else{
-                mySong.pause();
-                icon.src = "images/play.png";
-            }
-
-        }
+    <script src="script.js">
+       
     </script>
 </body>
 </html>
